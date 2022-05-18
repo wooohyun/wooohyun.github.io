@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+
+h1 {
+    color: red;
+}
+
+.box00 {
+    width: 1200px;
+    margin: 0 auto;
+    background: #333;
+    color: #fff;
+    
+}
+
+
+.box01 {
+    width: 50%;
+    background-color: #f00;
+}
+
+.box02 {
+    margin-left: 100px;
+    width: 100%;
+    background-color: #ff0;
+}
+
+.box03 {
+    margin-left: 100px;
+    background-color: #0f0;
+}
