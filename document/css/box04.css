@@ -1,0 +1,72 @@
+h1 {
+    line-height: 100px;
+    background: #f00;
+}
+
+nav {
+    line-height: 100px;
+    background: #00f;
+}
+
+.right {
+    line-height: 100px;
+    background: #ff0;
+}
+
+.header01 {
+    display: flex;
+}
+
+.header02 {
+    display: flex;
+    justify-content: center;
+    /* justify-content: center 쓰면 박스 중앙배열*/
+}
+
+.header03 {
+    display: flex;
+    justify-content: space-between;
+    /* 양옆 배열*/
+}
+
+.header04 {
+    display: flex;
+    justify-content: space-between;
+    /* 3등분 배열*/
+}
+
+.header05 {
+    display: flex;
+}
+
+.header05 nav {
+    margin: 0 0 0 auto;
+}
+
+/* 로고는 좌측 메뉴,아이콘은 우측*/
+
+.basic {
+    line-height: 100px;
+}
+
+
+.basic .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.basic nav {
+    margin: 0 0 0 auto;
+}
+
+.basic nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+/* 메뉴01~05에 따로 플렉스 지정을안해줘서 nav 아래 ul 에 플렉스 적용해주기*/
+
+.basic .icon {
+    margin: 0 0 0 30px;
+}
