@@ -27,3 +27,7 @@ body {
     /* 폰트패밀리해서 적용시켜줘야함 */
     font-family: 'Noto Sans KR', sans-serif;
 }
+
+img{
+    vertical-align: middle;
+}
