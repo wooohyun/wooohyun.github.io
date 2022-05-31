@@ -1,0 +1,65 @@
+.header {
+    line-height: 150px;
+    background-color: mediumaquamarine
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header .container ul {
+    display: flex;
+    gap: 50px;
+}
+
+.visual {
+    position: relative;
+    height: 600px;
+    background: #f3f3;
+    color: #333;
+    line-height: 600px;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    line-height: 200px;
+    background: #f5f5dc;
+}
+
+.mopen {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: #7b3f00;
+}
+
+.mopen span {
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    height: 2px;
+    background-color: #333;
+}
+
+.mopen span:nth-child(1) {
+    top: 7px;
+}
+
+.mopen span:nth-child(2) {
+    top: 14px;
+}
+
+.mopen span:nth-child(3) {
+    top: 14px;
+}
+
+.mopen span:nth-child(4) {
+    bottom: 7px;
+}
