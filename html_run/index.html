@@ -130,6 +130,61 @@
             <br>
         </li>
         <em>2022 06 07 (화)</em>
+        <hr />
+        <h2>시안잡기와 가상요소, 선택자에대한이해</h2>
+        <li><a href="./doc/psdtohtml01.html"> 포토샵에서 시안을 잡아보고 html css로 구현하는 작업</a>
+            <details>
+                <summary>정리</summary>
+                <p>
+                    <strong>포토샵</strong> <br><br>
+
+                    컨트롤 + ; 가이드라인 안보이게<br>
+                    컨트롤 + alt + ; 가이드라인 선택안되게 고정<br>
+                    tab 도구들 안보이게<br><br>
+
+
+                    시안에 사용한 이미지 내보내는 방법 <br>
+                    크롭 엔터한후 <br>
+                    1.ctrl+alt+shift+w 다른형식으로 내보내기<br>
+                    2.ctrl+alt+shift+s 웹형식으로 내보내기<br>
+                    1번 선택후 jpg 파일 퀄리티 60%로 내보내서 사용했음<br><br>
+
+                    <strong>CSS</strong><br><br>
+                    선택자 지정할때<br>
+                    section:nth-child(even) 짝수 <br>
+                    section:nth-child(odd) 홀수
+
+
+                </p>
+            </details>
+            <br>
+        </li>
+
+        <li><a href="./doc/Pseudo_Element01.html"> 가상요소에 대한 이해와 다양한 예제 만들어보기</a>
+            <details>
+                <summary>정리</summary>
+                <p>
+                    data-num :넘버링붙이는거<br>
+                    html 예시: figure data-num= "01" /figure <br>
+                    css에서 선택할때는
+                    attr함수를 이용해
+                    content: attr(data-num); 이런식으로 선택<br><br>
+
+                    가상요소에서 XEIcon 사용할때는<br>
+                    hr.list_hr::after {<br>
+                    content: " \e907";<br>
+                    font-family: xeicon !important}<br>
+                    이런식으로 유니코드형식으로 기입해줘야함<br><br>
+
+                    <a href="https://younghunkimm.github.io/xeicode/">유니코드 정리</a><br>
+                    유니코드 정리된 깃허브
+
+                </p>
+            </details>
+            <br>
+        </li>
+        <em>2022 06 08 (수)</em>
+        <hr />
     </ul>
     </details>
 </body>
