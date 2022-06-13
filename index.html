@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML List</title>
+</head>
+
+<body>
+    <h1>HTML List</h1>
+    <hr />
+    <h2>기본 박스 : box model</h2>
+    <ul>
+        <li><a href="./doc/box01.html">기본 박스 01</a>
+            <details>
+                <summary>정리</summary>
+                <p>기본적인 박스의 성질에 대한 이해[width height padding margin]</p>
+            </details>
+        </li>
+        <li><a href="./doc/box02.html">기본 박스 02</a>
+            <details>
+                <summary>정리</summary>
+                <p>선택자에 대한 이해 <br><br>
+                    section ul,div 이렇게 적으면 section아래 ul 과 모든 div 이렇게 선택됨<br>
+                    실수할수있으니깐 조심
+                </p>
+            </details>
+        </li>
+        <li><a href="./doc/multi_menu01.html">다단메뉴 01</a>
+            <details>
+                <summary>정리</summary>
+                <p>포지션을 이용한 다단메뉴01 실습</p>
+                <p>포지션에 관한걸 제일먼저 <br>
+                    그다음에 디스플레이에관한거 <br>
+                    폰트관련은 제일마지막<br>
+                    z인덱스는떼서 따로
+                </p>
+            </details>
+        </li>
+        <li><a href="./doc/multi_menu02.html">다단메뉴 02</a>
+            <details>
+                <summary>정리</summary>
+                <p>포지션을 이용한 다단메뉴02 실습</p>
+                <p> display:none, opacity 0, visibility:hidden 모두 눈에 보이지는않지만 <br><br>
+                    display:none 은 영역자체를 없애버리는 영역(x)<br>
+                    visibility:hidden 영역은 존재하나 이벤트같은게 적용되지않는( 영역 ㅇ 이벤트 x)<br>
+                    opacity 0 영역은 존재하고 이벤트도 적용되는 (영역 ㅇ 이벤트 ㅇ)
+                </p>
+            </details>
+            <br>
+            <em>2022 06 02 (목)</em>
+        </li>
+        <hr />
+        <h2>position의기초</h2>
+        <li><a href="./doc/position01.html">포지션01</a>
+            <details>
+                <summary>정리</summary>
+                <p>position: relative; 좌표를 가지는 position 상태가 된다<br>
+                    일반적인 position의 floating이나 w의 변화가 없다.<br>
+                    position: absolute; 뜬다. 쪼그라든다. 기준점이 없어져서 body를 기준으로 포개진다.<br>
+                    block의 속성을 가지게된다.<br>
+                    .position-absolute ; 의 기준을<br>
+                    부모요소인 position: relative; , absolute , fixed 로 기준을 만들어 줄 수 있다<br>.
+                    z-index로 흐름의 순서를 바꿔줄수있다. 정수를 쓴다<br>
+                    position-fixed는 기준이 없다.(viewport를 기준으로 한다)<br>
+                    스크롤바가 생기지않는다
+                </p>
+            </details>
+            <br>
+        </li>
+        <li><a href="./doc/position02.html">포지션02</a>
+            <details>
+                <summary>정리</summary>
+                <p>position03을만들기위한 개념 이해와 실습
+                </p>
+            </details>
+            <br>
+        </li>
+        <li><a href="./doc/position03.html">포지션03+sticky</a>
+            <details>
+                <summary>정리</summary>
+                <p>position과 sticky를 활용한 예제 사이트 만들어보기<br><br>
+                    각각의 이미지를 각각의figure로 감싸주니깐 <br>
+                    이미지가 정해진 width안에서 max-width 100%로 위치함<br>
+                    하나의 figure에 4개의 이미지를 넣었을때는 적용이안됐었음<br>
+                    figure<br>
+                    img src="../img/insta01.jpg" alt=""<br>
+                    img src="../img/insta02.jpg" alt=""<br>
+                    img src="../img/insta03.jpg" alt=""<br>
+                    img src="../img/insta04.jpg" alt=""<br>
+                    figure <br>
+                    이런식으로 했을때 적용안됨<br><br>
+                    <strong>css</strong><br>
+                    transform: translateX(-50%); 까먹지말기
+                </p>
+            </details>
+            <br>
+            <em>2022 06 03 (금)</em>
+            <hr />
+            <h2>hover를 활용한 position의이해</h2>
+        </li>
+        <li><a href="./doc/hover01.html">hover를 이용해 position을 이해하고 다양한예제를 만들어보기</a>
+            <details>
+                <summary>정리</summary>
+                <p> 시안잡는것에대한 간략한 이야기<br><br>
+                    1. 가이드라인 1170~ 1200px 잡고 <br>
+
+                    2. 강약 조절 text 그림 (배경에 색깔주는건 금지)<br>
+                    흰색으로 반복될때는 연한회색을 사용<br>
+
+                    3. 공간 많이 본인이 생각한 공간보다 더 여유있게 공간주기<br>
+
+                    그리드 시스템<br>
+                    12colum <br>
+                    왜 12냐??<br>
+                    12,<br>
+                    6+6,<br>
+                    4+4+4,<br>
+                    3+3+3+3 이 자유롭다<br><br>
+
+                    폰트사용은 노트산스 고정 나중에 풀어줌<br>
+                    폰트 색상은 검은색<br>
+                    배경에 패턴 꽃무늬같은거 채우는거 금지 <br>
+                    이미지를 채우거나 흰색으로비워놓기
+
+                </p>
+            </details>
+            <br>
+        </li>
+        <em>2022 06 07 (화)</em>
+        <hr />
+        <h2>시안잡기와 가상요소, 선택자에대한이해</h2>
+        <li><a href="./doc/psdtohtml01.html"> 포토샵에서 시안을 잡아보고 html css로 구현하는 작업</a>
+            <details>
+                <summary>정리</summary>
+                <p>
+                    <strong>포토샵</strong> <br><br>
+
+                    컨트롤 + ; 가이드라인 안보이게<br>
+                    컨트롤 + alt + ; 가이드라인 선택안되게 고정<br>
+                    tab 도구들 안보이게<br><br>
+
+
+                    시안에 사용한 이미지 내보내는 방법 <br>
+                    크롭 엔터한후 <br>
+                    1.ctrl+alt+shift+w 다른형식으로 내보내기<br>
+                    2.ctrl+alt+shift+s 웹형식으로 내보내기<br>
+                    1번 선택후 jpg 파일 퀄리티 60%로 내보내서 사용했음<br><br>
+
+                    <strong>CSS</strong><br><br>
+                    선택자 지정할때<br>
+                    section:nth-child(even) 짝수 <br>
+                    section:nth-child(odd) 홀수
+
+
+                </p>
+            </details>
+            <br>
+        </li>
+
+        <li><a href="./doc/Pseudo_Element01.html"> 가상요소에 대한 이해와 다양한 예제 만들어보기</a>
+            <details>
+                <summary>정리</summary>
+                <p>
+                    data-num :넘버링붙이는거<br>
+                    html 예시: figure data-num= "01" /figure <br>
+                    css에서 선택할때는
+                    attr함수를 이용해
+                    content: attr(data-num); 이런식으로 선택<br><br>
+
+                    가상요소에서 XEIcon 사용할때는<br>
+                    hr.list_hr::after {<br>
+                    content: " <span style="font-Family: Times New Roman">\</span>e907";<br>
+                    font-family: xeicon !important}<br>
+                    이런식으로 유니코드형식으로 기입해줘야함<br><br>
+
+                    <a href="https://younghunkimm.github.io/xeicode/">유니코드 정리</a><br>
+                    유니코드 정리된 깃허브<br><br>
+
+                    역슬래시 \로 출력되는거 <br>
+                    &lt; span style="font-Family: Times New Roman" &gt; <span
+                        style="font-Family: Times New Roman">\</span> &lt;/span&gt;적어서 역슬래시로 출력할수있음
+
+                </p>
+            </details>
+            <br>
+        </li>
+        <em>2022 06 08 (수)</em>
+        <hr />
+
+        <h2>포토샵을 활용한 레이아웃잡기 01</h2>
+        <li><a href="./doc/psdtohtml02.html"> 포토샵에서 시안을 잡아보고 html css로 구현하는 작업02</a>
+            <details>
+                <summary>정리</summary>
+                <p>
+                    <a href="">
+                        <img src="./img/crop01.png" alt="">
+                    </a>
+                </p>
+            </details>
+            <br>
+        </li>
+
+        <li>
+            <a href="./doc/header01.html"> 레이아웃 헤더부분 예제 01</a> <br><br>
+            <a href="./doc/header02.html"> 레이아웃 헤더부분 예제 02</a> <br><br>
+            <a href="./doc/header03.html"> 레이아웃 헤더부분 예제 03</a> <br><br>
+            <a href="./doc/header04.html"> 레이아웃 헤더부분 예제 04</a> <br><br>
+            <a href="./doc/header05.html"> 레이아웃 헤더부분 예제 05</a> <br><br>
+            <details>
+                <summary>정리</summary>
+                <p>
+
+                </p>
+            </details>
+            <br>
+        </li>
+        <em>2022 06 09 (목)</em>
+        <hr />
+        <h2>다단메뉴 03</h2>
+        <li><a href="./doc/multi_menu03.html"> 포지션에대한 이해 다단메뉴03 </a>
+            <details>
+                <summary>정리</summary>
+                <p>
+
+                </p>
+            </details>
+            <br>
+        </li>
+
+
+        <em>2022 06 10 (금)</em>
+        <hr />
+        <h2>슬라이드 </h2>
+        <li><a href="./doc/slick01.html"> slick을 활용한 슬라이드 </a>
+            <details>
+                <summary>정리</summary>
+                <p>
+
+                </p>
+            </details>
+            <br>
+        </li>
+
+
+        <em>2022 06 13 (월)</em>
+    </ul>
+    </details>
+</body>
+
+</html>

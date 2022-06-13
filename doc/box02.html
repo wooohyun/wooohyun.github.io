@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 선택자 기본 / 기본 박스 02</title>
+    <style>
+        /* 모든 선택자 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* outline: 1px solid #ff0000; */
+        }
+
+        /* tag 선택자 I / 후손 선택자*/
+        section li {
+            color: #ff0000;
+        }
+
+        section li:nth-child(1) {
+            color: #369;
+        }
+
+        section div:nth-child(2) {
+            color: #FF0;
+        }
+
+        section div:nth-of-type(2) {
+            color: #0ff;
+        }
+
+        #color {
+            color: #0f0;
+        }
+
+        .color {
+            color: #359;
+        }
+
+        .color+li {
+            color: chocolate;
+        }
+
+        .color~li {
+            color: lightcoral;
+        }
+
+        input {
+            outline: none;
+        }
+
+        input[type="text"] {
+            border: 1px solid #f00;
+        }
+
+        [class="color"] {
+            background: #ff0;
+        }
+
+        [class="col"] {
+            background: #ff0;
+        }
+
+        /* section ul,div 이렇게 적으면 section아래 ul 과 모든 div 이렇게 선택됨 실수할수있으니깐 조심  */
+        section ul,
+        section div {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <!-- ul>li*7{BOX0$} -->
+            <li>BOX01</li>
+            <li id="color" class="color">BOX02</li>
+            <li class="col">BOX03</li>
+            <li>BOX04</li>
+            <li>BOX05</li>
+            <li>BOX06</li>
+            <li>BOX07</li>
+        </ul>
+        <div>
+            BOX08
+        </div>
+        <div>
+            BOX09
+        </div>
+        <input type="text">
+        <input type="search">
+    </section>
+    <div>
+        BOX10
+    </div>
+</body>
+
+</html>
