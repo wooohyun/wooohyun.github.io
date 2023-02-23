@@ -36,49 +36,6 @@ h1 {
   }
 }
 
-.skill .container {
-  width: 1200px;
-  justify-content: center;
-}
-
-.skill .container h2 {
-  font-size: 31px;
-  color: yellow;
-  line-height: 1.45em;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.skill .container h3 {
-  font-size: 21px;
-  line-height: 1.45em;
-  margin-bottom: -20px;
-  text-align: center;
-}
-
-.skill .container .skill_right h3 {
-  margin-bottom: -30px;
-}
-
-.skill .skill_left .skill_img_code {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 100px;
-}
-
-.skill .skill_right .skill_img_other {
-  display: flex;
-  justify-content: space-between;
-}
-
-.skill .container figure img {
-  margin-bottom: -20px;
-  transform: scale(0.5);
-}
-
-.skill .container figure p {
-  text-align: center;
-}
 
 .project .container {
   width: 1200px;
@@ -189,6 +146,12 @@ h1 {
   font-weight: 400;
 }
 
+.project .inner .title .more{
+  display: flex;
+justify-content: center;
+gap: 50px;
+}
+
 
 .project .inner .title .url {
   font-size: 21px;
@@ -223,21 +186,68 @@ h1 {
   text-align: right;
 }
 
-.about_me .container h2 {
-  font-size: 31px;
-  color: yellow;
-  line-height: 1.45em;
-  margin-bottom: 100px;
-  text-align: center;
+.about_me .container {
+width: 1200px;
+justify-content: space-between;
 }
 
 .about_me .info {
-  display: flex;
-  gap: 50px;
   font-size: 30px;
+  margin-bottom: 100px;
 }
 
-.about_me .info .info_sub {
-  font-size: 25px;
+.about_me .info h3{
+  margin-bottom: 30px;
+}
+
+.about_me .info .history{
+  display: flex;
+  gap: 50px;
+}
+
+.about_me .info .history p{
+  font-size: 19px;
   line-height: 1.45em;
+}
+
+.about_me .info .history .history_right a:hover{
+  color: yellow;
+}
+
+.about_me .skill{
+  width: 1200px;
+  margin-bottom: -200px;
+}
+
+.about_me .skill h3 {
+  font-size: 21px;
+  line-height: 1.45em;
+  margin-bottom: -50px;
+  text-align: center;
+color: #ff0;
+}
+
+.about_me .skill .skill_right h3 {
+  margin-bottom: -50px;
+  margin-top: 50px;
+}
+
+.about_me .skill .skill_left .skill_img_code {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.about_me .skill .skill_right .skill_img_other {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_me .skill figure img {
+  margin-bottom: -40px;
+  transform: scale(0.3);
+}
+
+.about_me .skill  figure p {
+  text-align: center;
 }
