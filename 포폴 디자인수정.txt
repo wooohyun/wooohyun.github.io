@@ -1,12 +1,33 @@
-메인화면 다음에 바로 프로젝트화면
-그리고 자기소개페이지에서 스킬 작게해서 보여주기 
+메인화면 다음에 바로 프로젝트화면 o
+그리고 자기소개페이지에서 스킬 작게해서 보여주기 o
 이력같은것좀 넣고
-위에 스킬 프로젝트 이런거 다 지우고 아예깔끔하게
+위에 스킬 프로젝트 이런거 다 지우고 아예깔끔하게 o
 
-메인>프로젝트>자기소개페이지 (총3페이지분량)
+메인>프로젝트>자기소개페이지 (총3페이지분량) o
 
 
 프로젝트페이지에
-moreview github  버튼형식으로 바꾸고 한줄에 같이 배치하기
+moreview github  버튼형식으로 바꾸고 한줄에 같이 배치하기 별로안이쁜거같아서 보류
 
 html3개 리액트 2개
+
+
+
+마지막 소개페이지에 학교 경력같은거 채워서 넣기
+
+
+…or create a new repository on the command line
+echo "# -" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/wooohyun/wooohyun.github.io.git
+git push -u origin main
+
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/wooohyun/-.git
+git branch -M main
+git push -u origin main
